@@ -33,7 +33,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto center mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto center mb-2 mb-lg-0" id="menu">
             <li class="nav-item mx-3">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
@@ -80,7 +80,68 @@
       <h2 class="section-header">Contact</h2>
     </div>
     <!-- footer -->
-    <div class="footer section">Footer</div>
+    <div class="footer  footer-20192">
+    
+
+      <div class="site-section">
+        <div class="container">
+
+          <div class="cta d-block d-md-flex align-items-center px-5">
+            <div>
+              <h2 class="mb-0">Ready for a next project?</h2>
+              <h3 class="text-dark">Let's get started!</h3>
+            </div>
+            <div class="ml-auto">
+              <a href="#" class="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-sm">
+              <a href="#" class="footer-logo">Colorlib</a>
+              <p class="copyright">
+                <small>&copy; 2019</small>
+              </p>
+            </div>
+            <div class="col-sm">
+              <h3>Customers</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Buyer</a></li>
+                <li><a href="#">Supplier</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Company</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Further Information</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Follow us</h3>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-medium"></span></a></li>
+                <li><a href="#"><span class="icon-paper-plane"></span></a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    </div>
     <!-- bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -92,32 +153,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      var btns = $("#navigation .navbar-nav .nav-link");
-
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-
-          current[0].className = current[0].className.replace(" active", "");
-
-          this.className += " active";
-        });
-      }
-
-      $(window)
-        .scroll(function () {
-          var distance = $(window).scrollTop();
-          $(".section").each(function (i) {
-            if ($(this).position().top <= distance + 250) {
-              $(".navbar-nav a.active").removeClass("active");
-
-              $(".navbar-nav a").eq(i).addClass("active");
-            }
-          });
-        })
-        .scroll();
-    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/nav.js"></script>
   </body>
 </html>
