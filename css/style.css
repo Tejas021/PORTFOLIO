@@ -1,0 +1,34 @@
+body {
+  color: #d2d3d3;
+  background-color: #272727;
+}
+
+.section {
+  padding: 50px;
+  height: 100vh;
+}
+
+.light {
+  background-color: #d2d3d3;
+  color: #272727;
+}
+.section-header.dark {
+  color: #9615db;
+}
+.section-header {
+  text-align: center;
+  font-size: 250%;
+}
+.bg-dark {
+  background-color: #21252943 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #9615db;
+  text-decoration: underline;
+}
+
+.nav-item {
+  text-transform: uppercase;
+}
