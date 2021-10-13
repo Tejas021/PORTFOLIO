@@ -193,4 +193,11 @@ a:hover {
   nav {
     width: 100%;
   }
+  .section {
+    height: 100%;
+    padding: 50px 20px;
+  }
+  .objective .aboutme {
+    padding: 0px;
+  }
 }
