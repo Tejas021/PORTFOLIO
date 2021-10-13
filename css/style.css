@@ -3,6 +3,8 @@ body {
   background-color: #272727;
 }
 
+/*Body Structure*/
+
 .section {
   padding: 50px;
   height: 100vh;
@@ -23,12 +25,53 @@ body {
   background-color: #272727 !important;
 }
 
+/* Navbar */
 .navbar-dark .navbar-nav .nav-link {
   color: #9615db;
 }
 
 .nav-item {
   text-transform: uppercase;
+}
+
+nav {
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+  padding: 0;
+  height: 80px;
+  width: 65%;
+}
+
+/*Hero Banner*/
+
+.name {
+  font-size: 400%;
+  text-align: right;
+}
+.name-sub {
+  font-size: 300%;
+  text-align: right;
+}
+
+.profile-pic {
+  height: 300px;
+  width: 300px;
+  border: solid 2px #9615db;
+  border-radius: 50%;
+}
+
+/*About */
+
+.objective {
+  background-color: #9615db;
+  color: #272727;
+  padding: 50px;
+}
+.aboutme {
+  background-color: #272727;
+  color: #9615db;
+  padding: 50px;
 }
 
 /*Footer*/
@@ -142,4 +185,12 @@ a:hover {
 }
 .footer-20192 .cta h3 {
   font-size: 20px;
+}
+
+/* Media Query*/
+
+@media screen and (max-width: 480px) {
+  nav {
+    width: 100%;
+  }
 }
