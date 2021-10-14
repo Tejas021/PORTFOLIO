@@ -7,6 +7,10 @@ body {
 
 .section {
   padding: 50px;
+}
+
+#about,
+#home {
   height: 100vh;
 }
 
@@ -61,6 +65,9 @@ nav {
   border-radius: 50%;
 }
 
+.image-container {
+  text-align: left;
+}
 /*About */
 
 .objective {
@@ -72,6 +79,16 @@ nav {
   background-color: #272727;
   color: #9615db;
   padding: 50px;
+}
+
+/*cards ksils*/
+
+.card {
+  margin: 5px 0px;
+  height: 220px;
+  width: 220px;
+  padding: 2em;
+  border: solid 2px #9615db;
 }
 
 /*Footer*/
@@ -197,7 +214,19 @@ a:hover {
     height: 100%;
     padding: 50px 20px;
   }
-  .objective .aboutme {
+
+  .aboutme,
+  .objective {
+    padding: 20px;
+  }
+  #home {
     padding: 0px;
+  }
+  #about {
+    height: 100%;
+  }
+
+  .image-container {
+    text-align: center;
   }
 }
