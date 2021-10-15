@@ -234,21 +234,63 @@
       <h2 class="section-header">Contact</h2>
       <h2 class="section-header">
         <div class="container">
-          <form
-            action=""
-            class="form-control p-5 my-5"
-            style="background-color: #272727"
-          >
-            <input placeholder="Name" class="form-control" />
-            <input placeholder="Email" class="form-control" />
-            <input placeholder="Message" class="form-control" />
-            <button class="btn btn-danger">Submit</button>
-          </form>
+          <!--         
+          <form target="_blank" action="https://formsubmit.co/el/fojowo" method="POST" class="form-control p-5 my-5"
+          style="background-color: #272727"></form>
+            <input placeholder="Name" class="form-control" name="name" />
+            <input placeholder="Email" class="form-control" name="email" />
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            <button class="btn btn-danger" type="submit">Submit</button>
+          </form> -->
+
+          <div class="container">
+            <h1>FormSubmit Demo</h1>
+            <form
+              target="_blank"
+              action="https://formsubmit.co/650b9ff337f047b4de8c009135542e26"
+              method="POST"
+            >
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Your Message"
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">
+                Submit Form
+              </button>
+            </form>
+          </div>
         </div>
       </h2>
     </div>
     <!-- footer -->
-    <div class="footer footer-20192">
+    <!-- <div class="footer footer-20192">
       <div class="site-section">
         <div class="container">
           <div class="cta d-block d-md-flex align-items-center px-5">
@@ -308,7 +350,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
