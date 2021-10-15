@@ -244,44 +244,52 @@
           </form> -->
 
           <div class="container">
-            <h1>FormSubmit Demo</h1>
             <form
               target="_blank"
               action="https://formsubmit.co/650b9ff337f047b4de8c009135542e26"
               method="POST"
             >
-              <div class="form-group">
-                <div class="form-row">
+              <input
+                type="hidden"
+                name="_next"
+                value="https://tejas021.github.io/Thankyou.html"
+              />
+              <div class="form-group mt-3">
+                <div class="row">
                   <div class="col-md-6">
                     <input
                       type="text"
                       name="name"
-                      class="form-control"
+                      class="form-control bg-dark text-light"
                       placeholder="Full Name"
                       required
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mt-4">
                     <input
                       type="email"
                       name="email"
-                      class="form-control"
+                      class="form-control bg-dark text-light"
                       placeholder="Email Address"
                       required
                     />
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group mt-4 border border-danger">
                 <textarea
                   placeholder="Your Message"
-                  class="form-control"
+                  class="form-control bg-dark text-light"
                   name="message"
                   rows="10"
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-lg btn-dark btn-block">
+              <button
+                type="submit"
+                class="btn btn-lg btn-block"
+                style="background-color: red"
+              >
                 Submit Form
               </button>
             </form>
@@ -290,7 +298,7 @@
       </h2>
     </div>
     <!-- footer -->
-    <!-- <div class="footer footer-20192">
+    <div class="footer footer-20192">
       <div class="site-section">
         <div class="container">
           <div class="cta d-block d-md-flex align-items-center px-5">
@@ -350,7 +358,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
